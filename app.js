@@ -15,3 +15,33 @@ for (i = 0; i < faq.length; i++) {
         }
     });
 }
+
+
+// mind-map click full-screen
+function openContentOne() {
+    document.getElementById("mindmap-content-1").style.width = "100%";
+
+  }
+
+  function openContentTwo() {
+    document.getElementById("mindmap-content-2").style.width = "100%";
+
+  }
+
+  function openContentThree() {
+    document.getElementById("mindmap-content-3").style.width = "100%";
+
+  } 
+  
+function closeContentOne() {
+    document.getElementById("mindmap-content-1").style.width = "0%";
+  }
+
+  function closeContentTwo() {
+    document.getElementById("mindmap-content-2").style.width = "0%";
+  }
+
+  function closeContentThree() {
+    document.getElementById("mindmap-content-3").style.width = "0%";
+  }
+

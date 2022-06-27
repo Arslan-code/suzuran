@@ -152,7 +152,7 @@
                     <hr class="hr-line">
                     <div class="faq-three">
                         <!-- faq question -->
-        <h4 class="faq-page" style="color: #fff;">Does it improves the user experience of a website?</h4>
+                        <h4 class="faq-page" style="color: #fff;">Does it improves the user experience of a website?</h4>
                         <!-- faq answer -->
                         <div class="faq-body">
                             <p style="color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
@@ -164,8 +164,44 @@
                 </section>
             </main>
         </div>
-    </div>
-    <script src="../app.js"></script>
+
+
+
+
+        <div class="container-6">
+            <div id="mindmap-content-1" class="overlay">
+                <a style="color: #f2017b;" href="javascript:void(0)" class="closebtn" onclick="closeContentOne()">&times;</a>
+                content-1
+            </div>
+            <div id="mindmap-content-2" class="overlay">
+                <a style="color: #f2017b;" href="javascript:void(0)" class="closebtn" onclick="closeContentTwo()">&times;</a>
+                content-2
+            </div>
+            <div id="mindmap-content-3" class="overlay">
+                <a style="color: #f2017b;" href="javascript:void(0)" class="closebtn" onclick="closeContentThree()">&times;</a>
+                content-3
+            </div>
+            
+            <div class="mindmap-cards">
+
+                <div class="card-mindmap" onclick="openContentOne()" style="width: 18rem; cursor: pointer;">                
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+
+                <div class="card-mindmap" onclick="openContentTwo()" style="width: 18rem; cursor: pointer;">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                    
+                </div>
+
+                <div class="card-mindmap" onclick="openContentThree()" style="width: 18rem; cursor: pointer;">                       
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+
+            </div>
+        
+        </div>
     
+    </div>
+
+    <script src="../app.js"></script>
 </body>
 </html>

@@ -8,6 +8,12 @@
     font-family: 'suzuran';
     src: url(../static/fonts/Android\ 101.ttf);
 }
+
+@font-face {
+  font-family: 'atmospheric';
+  src: url('../static/fonts/aAtmospheric.ttf');
+}
+
 .container-1{
     position: relative;
     display: flex;
@@ -99,7 +105,6 @@
     height: auto;
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
     overflow: hidden;
     margin-top: 200px;
     background-image: inherit url(../static/images/homepage.jpg);
@@ -126,12 +131,7 @@
     padding: 8px;
     
   }
-  /* #flip-card-1{
-    position:absolute;
-  }
-  #flip-card-2,#flip-card-3,#flip-card-4{
-    position: absolute;
-  } */
+  
   
   .flip-card-inner {
     position: absolute;
@@ -345,17 +345,17 @@
     width: 50%;
     height: auto;
   }
-------------------------------------------------------------------------
+/* ------------------------------------------------------------------------ */
 
 .container-5{
   width: 100%;
   height: auto;
-  margin-top: 300px;
-  margin-bottom: 100px;
+  margin-top: 150px;
 }
 
 
 .faq-heading{
+  font-family: 'atmospheric';
   padding: 20px 60px;
   text-align: center;
   color: #f2017b;
@@ -367,13 +367,11 @@ flex-direction: column;
 padding-bottom: 100px;
 }
 
-
 .hr-line{
 width: 60%;
 margin: auto;
 
 }
-
 
 .faq-one{
   padding-bottom: 5px;
@@ -385,10 +383,7 @@ margin: auto;
   padding-bottom: 5px;
 }
 
-/* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-  /* background-color: #eee; */
- 
   cursor: pointer;
   padding: 15px 10px;
   width: 60%;
@@ -401,17 +396,14 @@ margin: auto;
 }
 .faq-body{
   margin: auto;
-  /* text-align: center; */
- width: 60%; 
- padding: auto;
+  width: 60%; 
+  padding: auto;
  
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
   background-color: #21001d;
 }
-/* Style the faq-page panel. Note: hidden by default */
 .faq-body {
   padding: 0 18px;
   background-color: #21001d;
@@ -419,18 +411,101 @@ margin: auto;
   overflow: hidden;
 }
 .faq-page:after {
-  content: '\FF0B';
+  content: '\002B';
+  /* 29e8 şifre */
   /* Unicode character for "plus" sign (+) */
-  font-size: 30px;
+  font-size: 35px;
   color: #21001d;
   float: right;
   margin-left: 5px;
+  padding-right: 5px;
 }
 .active:after {
   content: "\2796";
+  font-size: 35px;
   color: #fff;
-  /* Unicode character for "minus" sign (-) */
 }
+
+/* ------------------------------------------ */
+
+.container-6{
+  position:relative;
+  width: 100%;
+  height: auto;
+  margin-top: 200px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#fff ;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.container-6 .mindmap-cards {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  
+}
+
+.container-6 .mindmap-cards .card-mindmap {
+  position: relative;
+  width: 280px;
+  height: 420px;
+  padding: 8px;
+  border: 3px solid #f2017b;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container-6 .mindmap-cards .card-mindmap .card-text{
+  text-align: center;
+  color: #fff;
+}
+
 
 
 
