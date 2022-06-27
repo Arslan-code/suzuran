@@ -22,7 +22,7 @@
     
 .container-1 #homepage{
     width: 100%;
-    height: 1080px;
+    height: auto;
 }
 
 .container-1 .header{
@@ -57,14 +57,17 @@
     right: 125px;
 }
 
+/* ----------------------------------------------------- */
+
+
 .container-2{
     background: #21001d;
     max-width: 100%;
     max-height: auto;
     min-width: 100%;
     min-height:auto ;
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: auto;
     
 }
 
@@ -92,18 +95,27 @@
 
 .container-3{
     position: relative;
-    max-width: 100%;
-    max-height: auto;
-    min-width: 100%;
-    min-height:auto ;
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
     overflow: hidden;
-    background: #21001d;
-  
+    margin-top: 200px;
+    background-image: inherit url(../static/images/homepage.jpg);
+}
+
+.container-3 .cards{
+    padding: 70px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-3 img{
+    width: 100%;
+    height: auto;
 }
 
 .flip-card {
@@ -114,9 +126,15 @@
     padding: 8px;
     
   }
+  /* #flip-card-1{
+    position:absolute;
+  }
+  #flip-card-2,#flip-card-3,#flip-card-4{
+    position: absolute;
+  } */
   
   .flip-card-inner {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -138,23 +156,238 @@
   }
   
   .flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #21001d;
     color: black;
     border: 3px solid #f2017b;
     border-radius: 25px;
   }
-  
-  .flip-card-back {
-    background-color: #21001d;
-    color: white;
-    transform: rotateY(180deg);
-  }
 
- .container-3 .flip-card .flip-card-inner .flip-card-front img{
+  .container-3 .flip-card .flip-card-inner .flip-card-front img{
     width: 100%;
     height: auto;
     object-fit: cover;
  } 
+
+ .container-3 .flip-card .flip-card-inner .flip-card-front H2{
+    position: absolute;
+    background: #f2017b;
+    color: #21001d;
+    border-radius: 10px;
+    top: 75%;
+    max-width: 100%;
+    height: auto;
+ }
+  
+  .flip-card-back {
+    background-color:transparent;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+  /* -------------------------------- */
+
+  .container-4{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #21001d;
+    margin-top: 200px;
+    
+  }
+
+  .container-4 .contents{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .container-4 .contents .content-1{
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+
+  .container-4 .contents .content-1 #world-map{
+    
+    width: 100%;
+    height: auto;
+  }
+
+  .container-4 .contents .content-1 #location-icon-1{
+    position:absolute;
+    left:48%;
+    top:32%;
+    width: 5%;
+  }
+  .container-4 .contents .content-1 #location-icon-2{
+    position:absolute;
+    left:44%;
+    top:30%;
+    width: 5%;
+  } 
+  .container-4 .contents .content-1 #location-icon-3{
+    position:absolute;
+    left:52%;
+    top:29%;
+    width: 5%;
+
+  } 
+  
+  .container-4 .contents .content-1 #location-icon-4{
+    position:absolute;
+    left:22%;
+    top:38%;
+    width: 5%;
+  }
+
+  .container-4 .contents .content-1 .img-content-1 .info-1{
+    background-color: #f2017b;
+    color: #21001d;
+    border-radius: 50px;
+    position:absolute;
+    left:48%;
+    top:24%;
+    z-index: 1;
+    visibility: hidden;  
+    cursor: default;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .container-4 .contents .content-1 .img-content-1:hover #location-icon-1{
+    visibility: hidden;
+  }
+
+  .container-4 .contents .content-1 .img-content-1:hover .info-1{
+    visibility: visible;
+  }
+
+ 
+
+  .container-4 .contents .content-1 .img-content-2 .info-2{
+    background-color: #f2017b;
+    color: #21001d;
+    border-radius: 50px;
+    position:absolute;
+    left:45%;
+    top:23%;
+    z-index: 1;
+    visibility: hidden;  
+    cursor: default;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .container-4 .contents .content-1 .img-content-2:hover #location-icon-2{
+    visibility: hidden;
+  }
+  .container-4 .contents .content-1 .img-content-2:hover .info-2{
+    visibility: visible;
+  }
+
+  
+
+  .container-4 .contents .content-1 .img-content-3 .info-3{
+    background-color: #f2017b;
+    color: #21001d;
+    border-radius: 15px;
+    position:absolute;
+    left:52%;
+    top:23%;
+    z-index: 1;
+    visibility: hidden;  
+    cursor: default;
+    padding: 10px;
+    width: 30%;
+  }
+
+
+  .container-4 .contents .content-1 .img-content-3:hover #location-icon-3{
+    visibility: hidden;
+  }
+
+  .container-4 .contents .content-1 .img-content-3:hover .info-3{
+    visibility: visible;
+  }
+
+  
+  .container-4 .contents .content-1 .img-content-4 .info-4{
+    background-color: #f2017b;
+    color: #21001d;
+    border-radius: 15px;
+    position:absolute;
+    left:22%;
+    top:32%;
+    z-index: 1;
+    visibility: hidden;  
+    cursor: default;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .container-4 .contents .content-1 .img-content-4:hover #location-icon-4{
+    visibility: hidden;
+  }
+
+  .container-4 .contents .content-1 .img-content-4:hover .info-4{
+    visibility: visible;
+  }
+  
+  
+
+  .container-4 .contents .content-2{
+    width: 50%;
+    height: auto;
+  }
+
+  .container-5{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #21001d;
+    margin-top: 200px;
+}
+
+.container-5 .faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-5 .faq .faq-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-5 .faq .faq-list .list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background: #f2017b;
+    color: #21001d;
+    font-family: suzuran;
+    
+
+}
+
+
+
+
 
 
 
