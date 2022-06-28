@@ -45,3 +45,22 @@ function closeContentOne() {
     document.getElementById("mindmap-content-3").style.width = "0%";
   }
 
+  // music play/pause
+  const music = document.getElementById("myMusic");
+  const playSvg = document.querySelector(".play-svg");
+  const pauseSvg = document.querySelector(".pause-svg");
+ 
+
+  function turnOnMusic(){
+    myMusic.play();
+    playSvg.classList.add('d-none');
+    pauseSvg.style.visibility = "visible";
+  }
+
+  function turnOffMusic(){
+    myMusic.pause();
+    playSvg.classList.remove('d-none');
+    pauseSvg.style.visibility = "hidden";
+    
+  }
+

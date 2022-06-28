@@ -507,6 +507,29 @@ margin: auto;
 }
 
 
+.bg-music{
+  position: fixed;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.play-svg{
+  width: 3rem;
+  height: auto;
+  background-color: #f2017b;
+  visibility: visible;
+}
+
+.pause-svg{
+  width: 3rem;
+  height: auto;
+  background-color: #f2017b;
+  visibility: hidden;
+}
+
+
 
 
 
