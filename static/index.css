@@ -85,14 +85,14 @@
 
 .container-2 #recorder{
     padding-bottom: 10%;
-    float: right;
+    float: left;
     width: 50%;
     height: auto;
 }
 
 .text{
     padding-top: 10%;
-    padding-left: 3%;
+    padding-right: 3%;
     color: #fff;
 }
 
@@ -112,6 +112,7 @@
 
 .container-3 .cards{
     padding: 70px;
+    padding-top: 10%;
     position: absolute;
     width: 100%;
     display: flex;
@@ -128,7 +129,7 @@
     width: 280px;
     height: 420px;
     perspective: 1000px;
-    padding: 8px;
+    padding: 10px;
     
   }
   
@@ -493,20 +494,56 @@ margin: auto;
   width: 280px;
   height: 420px;
   padding: 8px;
-  border: 3px solid #f2017b;
+  border: 3px solid #fff;
   border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #21001d;
   
 }
 
 .container-6 .mindmap-cards .card-mindmap .card-text{
   text-align: center;
   color: #fff;
+  letter-spacing: 2px;
+  font-family: atmospheric;
+  padding-top: 8%; 
+  margin-bottom: 0;
+}
+#rarity-text{
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: atmospheric;
 }
 
 
+.container-6 #mindmap-content-1{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.container-6 #mindmap-content-1 .text-metaverse{
+  width: 50%;
+  padding: 2%;
+  font-family: atmospheric;
+}
+
+.container-6 #mindmap-content-1 .img-metaverse-content{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-6 #mindmap-content-1  .img-metaverse{
+  width: 80%;
+  height: auto;
+}
+
+
+/* ---------------------------------------------------- */
 .bg-music{
   position: fixed;
   margin: 0;
@@ -520,6 +557,8 @@ margin: auto;
   height: auto;
   background-color: #f2017b;
   visibility: visible;
+  border-radius: 50px;
+
 }
 
 .pause-svg{
@@ -527,8 +566,9 @@ margin: auto;
   height: auto;
   background-color: #f2017b;
   visibility: hidden;
+  border-radius: 50px;
 }
-
+/* ---------------------------------------------------------- */
 .container-7{
   background: #21001d;
   max-width: 100%;
@@ -548,17 +588,39 @@ margin: auto;
 
 .container-7 #recorder-7{
   padding-bottom: 10%;
-  float: left;
+  float: right;
   width: 50%;
   height: auto;
 }
 
 .text-7{
   padding-top: 10%;
-  padding-right: 3%;
+  padding-left: 3%;
   color: #fff;
 }
 
+/* ----------------------------------------------------- */
+
+.container-8 .content-8{
+
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-8 .content-8 .cypher{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+.container-8 .content-8 .text-8{
+  color: #fff;
+  padding-right: 5%;
+}
 
 
 
