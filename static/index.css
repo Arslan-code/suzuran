@@ -169,18 +169,9 @@
   .container-3 .flip-card .flip-card-inner .flip-card-front img{
     width: 100%;
     height: auto;
-    object-fit: cover;
  } 
 
- .container-3 .flip-card .flip-card-inner .flip-card-front H2{
-    position: absolute;
-    background: #f2017b;
-    color: #21001d;
-    border-radius: 10px;
-    top: 75%;
-    max-width: 100%;
-    height: auto;
- }
+ 
   
   .flip-card-back {
     background-color:transparent;
@@ -225,6 +216,7 @@
     left:48%;
     top:32%;
     width: 5%;
+
   }
   .container-4 .contents .content-1 #location-icon-2{
     position:absolute;
@@ -248,9 +240,9 @@
   }
 
   .container-4 .contents .content-1 .img-content-1 .info-1{
-    background-color: #f2017b;
-    color: #21001d;
-    border-radius: 50px;
+    background-color: #fff;
+    color: #f2017b;
+    border-radius: 15px;
     position:absolute;
     left:48%;
     top:24%;
@@ -269,12 +261,10 @@
     visibility: visible;
   }
 
- 
-
   .container-4 .contents .content-1 .img-content-2 .info-2{
-    background-color: #f2017b;
-    color: #21001d;
-    border-radius: 50px;
+    background-color: #fff;
+    color: #f2017b;
+    border-radius: 15px;
     position:absolute;
     left:45%;
     top:23%;
@@ -295,8 +285,8 @@
   
 
   .container-4 .contents .content-1 .img-content-3 .info-3{
-    background-color: #f2017b;
-    color: #21001d;
+    background-color: #fff;
+    color: #f2017b;
     border-radius: 15px;
     position:absolute;
     left:52%;
@@ -319,8 +309,8 @@
 
   
   .container-4 .contents .content-1 .img-content-4 .info-4{
-    background-color: #f2017b;
-    color: #21001d;
+    background-color: #fff;
+    color: #f2017b;
     border-radius: 15px;
     position:absolute;
     left:22%;
@@ -436,7 +426,7 @@ margin: auto;
   margin-top: 200px;
 }
 
-.overlay {
+.container-6 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -446,9 +436,8 @@ margin: auto;
   background-color:#fff ;
   overflow-x: hidden;
   transition: 0.5s;
+  
 }
-
-
 
 .overlay a {
   padding: 8px;
@@ -492,27 +481,38 @@ margin: auto;
 .container-6 .mindmap-cards .card-mindmap {
   position: relative;
   width: 280px;
-  height: 420px;
+  height: 370px;
   padding: 8px;
   border: 3px solid #fff;
   border-radius: 25px;
-  background-color: #21001d;
-  
+  background-color: #fff;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-6 .card-mindmap .bg-img-card{
+  width: 90%;
+  height: auto;
 }
 
 .container-6 .mindmap-cards .card-mindmap .card-text{
+  position: absolute;
   text-align: center;
-  color: #fff;
+  color: #f2017b;
   letter-spacing: 2px;
   font-family: atmospheric;
   padding-top: 8%; 
   margin-bottom: 0;
 }
 #rarity-text{
+  position: absolute;
   text-align: center;
-  color: #fff;
+  color: #f2017b;
   letter-spacing: 2px;
   font-family: atmospheric;
+  padding-top: 18%; 
+  margin-bottom: 0;
 }
 
 
@@ -542,14 +542,71 @@ margin: auto;
   height: auto;
 }
 
+/* --------------- */
+
+.container-6 #mindmap-content-2{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.container-6 #mindmap-content-2 .text-ars{
+  width: 50%;
+  padding: 2%;
+  font-family: atmospheric;
+}
+
+.container-6 #mindmap-content-2 .img-ars-content{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-6 #mindmap-content-2  .img-ars{
+  width: 80%;
+  height: auto;
+}
+
+/* ------------------ */
+
+.container-6 #mindmap-content-3{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.container-6 #mindmap-content-3 .text-physical-world{
+  width: 50%;
+  padding: 2%;
+  font-family: atmospheric;
+}
+
+.container-6 #mindmap-content-3 .img-physical-world-content{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-6 #mindmap-content-3  .img-physical-world{
+  width: 80%;
+  height: auto;
+}
+
 
 /* ---------------------------------------------------- */
 .bg-music{
   position: fixed;
   margin: 0;
-  left: 0;
-  bottom: 0;
+  left: 3%;
+  bottom: 2%;
   z-index: 1;
+  
 }
 
 .play-svg{
@@ -557,7 +614,7 @@ margin: auto;
   height: auto;
   background-color: #f2017b;
   visibility: visible;
-  border-radius: 50px;
+ 
 
 }
 
@@ -566,15 +623,11 @@ margin: auto;
   height: auto;
   background-color: #f2017b;
   visibility: hidden;
-  border-radius: 50px;
+  
 }
 /* ---------------------------------------------------------- */
 .container-7{
   background: #21001d;
-  max-width: 100%;
-  max-height: auto;
-  min-width: 100%;
-  min-height:auto ;
   width: 100%;
   height: auto;
   
@@ -587,25 +640,28 @@ margin: auto;
 }
 
 .container-7 #recorder-7{
-  padding-bottom: 10%;
   float: right;
   width: 50%;
   height: auto;
 }
 
 .text-7{
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 3%;
   color: #fff;
 }
 
 /* ----------------------------------------------------- */
 
+.container-8{
+  width: 100%;
+  height: auto;
+}
+
 .container-8 .content-8{
 
   width: 100%;
   height: auto;
-  margin-top: 5%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
