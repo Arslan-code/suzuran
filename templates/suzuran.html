@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/index.css">
-    <link rel="canonical" href="https://www.dafont.com/android-101.font">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Suzuran</title>
@@ -13,35 +12,49 @@
 <body>
     <div style="background: #21001d;">
         <div class="bg-music">
-            <audio id="myMusic" src="../static/music/Çakal - İmdat - Mp3indir.club.mp3" loop=""></audio>
-            <img class="play-svg" src="../static/images/play.svg" onclick="turnOnMusic()" alt="play">
-            <img class="pause-svg" src="../static/images/pause.svg" onclick="turnOffMusic()" alt="pause">
+            <div class="music-box">
+                <div style="width:2%; background-color: #fff;"></div>
+                <img class="play-svg" src="../static/images/play.svg" onclick="turnOnMusic()" alt="play">
+                <img class="pause-svg" src="../static/images/pause.svg" onclick="turnOffMusic()" alt="pause">
+                <img style="width: 50%;" src="../static/images/gramaphone.png" alt="gramaphone">
+                <audio id="myMusic" src="../static/music/music.mp3"></audio>
+            </div>
+            
+             
         </div>
         
         <div class="container-1">
+           
             <img id="homepage" src="../static/images/homepage.jpg" alt="">
-            <h2 class="header" style="font-family: suzuran; font-size: 50px;">SUZURAN</h2>
+            <div class="header">
+            
+            <h2 style="font-size:50px; font-family: suzuran; color: #f2017b;">SUZURAN<img style="width: 5rem;" src="../static/images/logo.png" alt=""></h2>
+            </div>
             <a href="https://twitter.com/login?lang=tr" target="_blank"><img id="logo-discord" src="../static/images/icons8-discord.svg" alt="discord"></a>
             <a href="https://twitter.com/login?lang=tr" target="_blank"><img id="logo-twitter" src="../static/images/icons8-twitter.svg" alt="twitter"></a>
             <a href="https://twitter.com/login?lang=tr" target="_blank"><img id="logo-youtube" src="../static/images/icons8-youtube.svg" alt="youtube"></a>
         </div>
 
-        
-        <div class="container-8">
-            <h1 style="color:#f2017b; padding-left: 50%;  padding-top: 11%; position:absolute; font-family: atmospheric;">CYPHER</h1>
-            <div class="content-8">
-                <img class="cypher" src="../static/images/cypher.GIF" alt="cypher">
+        <!-- 8 yerine 2 -->
+        <div class="container-2"> 
+            <div class="content-2">
+                    <div style="width: 50%;">
+                        <img class="cypher" src="../static/images/cypher.GIF" alt="cypher">
+                    </div>
                 
-                <p class="text-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo illo atque facere aspernatur eos commodi eius blanditiis accusantium, tempora maiores minima obcaecati nulla aperiam consequuntur sunt! Aperiam, asperiores harum.</p>
-                <p id="demo" style="text-align: center; font-size: 60px; margin-top:0px; color: #fff;"></p>
-            </div>
+                    <div style="width: 50%;">
+                        <h1 style="color:#f2017b; font-family: atmospheric; text-align: center; padding-top: 23%;">CYPHER</h1>
+                        <p id="countdown" style=" font-family: countdown; font-size: 4rem; color:#f2017b; padding-top: 20%; text-align: center;"></p>
+                        <p class="text-2" style="font-family: suzuran; font-size: 4rem; color: #f2017b; text-align: center;">10 000 $</p>
+                    </div>
+                
         </div>
 
-
-        <div class="container-7">
+        <!-- 7yerine üç -->
+        <div class="container-3">
             <h1 style="color: #f2017b;  padding-left: 3%; font-family: atmospheric;  ">DECLARATION</h1>
-            <div class="content-7">
-                <p class="text-7">
+            <div class="content-3">
+                <p class="text-3">
                     
                     We are the chaos.
                     <br>   
@@ -68,11 +81,12 @@
                     <br>
                     We need to…
                     </p>
-                <img id="recorder-7" src="../static/images/recorder.png" alt=""> 
+                <img id="recorder-3" src="../static/images/recorder.png" alt=""> 
             </div>
         </div>
-
-        <div class="container-2">
+        <!-- 2 yerine 4 -->
+        <div class="container-4">
+            <h1 style="color:#f2017b; padding-left: 50%; padding-top: 10%; position:absolute; font-family: atmospheric;">SUZURAN TICKET</h1>
             <div class="content">
                 <img id="recorder" src="../static/images/recorder.png" alt="recorder"> 
                 <p class="text">Suzuran is an innovator, a 10.000-piece collection that has rich goals and unique ideas and aims to create Acquired Rarity System (ARS). Having Suzuran provides you the entrance to the community and the right to use the ARS. Together with the Suzuran Tickets, you will be qualified to get involved in everything from the first class that Suzuran will do. We recommend to you get involved as early as possible. Why? Don’t you think we are making a grandiose entrance into the industry? </p>
@@ -82,20 +96,24 @@
 
         
 
-
-        <div class="container-3">
+        <!-- 3 yerine 5 -->
+        <div class="container-5">
            <img src="../static/images/bunker_dark.png" alt="">
            <div class="cards">
             <div class="flip-card" id="flip-card-1">
+                
                 <div class="flip-card-inner">
+                    
                 <div class="flip-card-front">
                     <img src="../static/images/character1.png" alt="Avatar">
-                    
+                    <h2 style="color:#f2017b;">DANTE</h2>
                 </div>
                 <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h4>XAVIER DE WAELE</h4> 
+                    <br><br>
+                    <p> <b>MUSIC PRODUCER</b></p> 
+                    <p><b>FORMER MUSIC COMPANY FOUNDER</b></p>
+                    <p><b>AMATEUR PIANIST</b></p>
                 </div>
                 </div>
             </div>
@@ -103,12 +121,14 @@
                 <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="../static/images/character2.png" alt="Avatar">
-                
+                    <h2 style="color: #f2017b;">IZANAMI</h2>
                 </div>
                 <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h4>JAKUB ZIELINSKI</h4> 
+                    <br><br>
+                    <p> <b>JAPANESE CULTURE FAN</b></p> 
+                    <p><b>REDDIT</b></p>
+                    <p><b>FANTASY WRITER</b></p>
                 </div>
                 </div>
             </div>
@@ -116,12 +136,15 @@
                 <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="../static/images/character3.PNG" alt="Avatar">
-                
+                    <h2 style="color: #f2017b;">BOMBADIL</h2>
                 </div>
                 <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h4>ANTONIO HUDSON EMMETT</h4> 
+                    <br><br>
+                    <p> <b>BORED PROGRAMMER</b></p> 
+                    <p><b>FORMER UBER DEVELOPER</b></p>
+                    <p><b>HUMORIST</b></p>
+                    <p><b>LOTR FAN</b></p>
                 </div>
                 </div>
             </div>
@@ -129,12 +152,15 @@
                 <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="../static/images/character4.PNG" alt="Avatar">
-                    
+                    <h2 style="color: #f2017b;">PETRICHORE</h2>
                 </div>
                 <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h4>SYLVIA ROSENBERG</h4> 
+                    <br><br>
+                    <p> <b>FOUNTAIN OF HAPPINESS</b></p> 
+                    <p><b>LINGUIST</b></p>
+                    <p><b>VINTAGE</b></p>
+                    <p><b>PASSIONATE LOVER</b></p>
                 </div>
                 </div>
             </div>
@@ -142,8 +168,9 @@
         </div>
 
 
-
-        <div class="container-4">
+        <!-- 4 yerine 6 -->
+        <div class="container-6">
+            <h1 style="color:#f2017b; font-family: atmospheric; font-size: 2.8rem; padding-top: 14%; position: absolute; padding-left: 50%;">SUZURAN OPERATORS</h1>
             <div class="contents">
                 <div class="content-1">
                     
@@ -152,72 +179,85 @@
 
                     <div class="img-content-1">
                         <img id="location-icon-1" src="../static/images/location.svg" alt="location">                
-                        <button class="info-1">ygyjgvhjvhg</button>
+                        <button class="info-1">PETRICHORE</button>
                     </div>  
                     <div class="img-content-2">
                         <img id="location-icon-2" src="../static/images/location.svg" alt="location">
-                        <button class="info-2">ygyjgvhjvhg</button>
+                        <button class="info-2">DANTE</button>
                     </div>
                     <div class="img-content-3">
                         <img id="location-icon-3" src="../static/images/location.svg" alt="location">
-                        <button class="info-3">ygyjgvhjvhg</button>
+                        <button class="info-3">IZANAMI</button>
                     </div>
                     <div class="img-content-4">
                         <img id="location-icon-4" src="../static/images/location.svg" alt="location">
-                        <button class="info-4">ygyjgvhjvhg</button>
+                        <button class="info-4">BOMBADIL</button>
                     </div>
                 </div>
-
+                
                 <div class="content-2">
-                    <p style="font-family: suzuran; color: #f2017b;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ex laudantium est assumenda similique itaque cumque, adipisci ad mollitia illo, voluptatum sed nihil corrupti neque, quod nesciunt animi enim.</p>
+                    <p style="color: #fff; padding-top:30%; font-size: 1.25rem;" >At Suzuran we would like to show operators and future operators to everyone on this map. Those who want to work with us, keep your CVs ready until August 5th.</p>
                 </div>
             </div>  
             
             
         </div>
-
-        <div class="container-6">
+        <!-- 6 yerine 7 -->
+        <div class="container-7">
             <div id="mindmap-content-1" class="overlay" style="width: 0%;">
                 <a style="color: #f2017b;" href="javascript:void(0)" class="closebtn" onclick="closeContentOne()">&times;</a>
-                <p class="text-metaverse">
-                
-                Our <button style="background-color: yellow; border: #fff; border-radius: 8px;"> <b style="padding: 10px;">aim is to make</b></button>  Suzuran the biggest internet community in the world. The most important point of our aim is to create a common workspace wherever in the world you are, unlike other communities with weak bonds between their members. Keep in mind that Suzuran has purposes more than a project. There is a suitable role for everybody under Suzuran since it needs you, no matter what you work with. We are working for empowering the projects that are not able to make their ideas real and get the projects released under us.
+            <div class="text-metaverse">
+                <p>
+                    <h2>BASLIK</h2>
+                Our aim is to make Suzuran the biggest internet community in the world. The most important point of our aim is to create a common workspace wherever in the world you are, unlike other communities with weak bonds between their members. Keep in mind that Suzuran has purposes more than a project. There is a suitable role for everybody under Suzuran since it needs you, no matter what you work with. We are working for empowering the projects that are not able to make their ideas real and get the projects released under us.
                 <br><br>
+                    <h2>Baslık2</h2>
                 We are ready to provide every opportunity to create working conditions that will eliminate the importance of where you are in the world. In this project, we want to work and improve together with you. We aim to expand our world map with our new staff and colleagues by starting recruitments in a short time.
                 <br><br>
+                    <h2>Baslık2</h2>
                 Suzuran is a universe created with a great background. Introducing this universe to the whole world and having pleasant moments will be one of our most important aims. For this purpose, we are planning to continue our lore explanations in 2 ways that can be listed as comics and animation series. We want to proceed with them in separate timelines. We want the story told by the comic book and the animation to pass in different time periods and we want people to understand the complete story at the end by merging them. 
                 <br><br>
+                    <h2>Baslık2</h2>
                 We aim to produce a roguelike game that most gamers love in the gaming community. Even though it looks the same every time you play, we are hoping to create a work that will not bore you and will make you play it over and over again. We want to eradicate this game genre by taking advantage of the Suzuran's large universe. Via getting inspired by the Dead Cells and the Hades, which are masterpieces of this genre, we aim to present our own creations to you on Steam. The reason we want to present it on Steam is to destroy the influence created by other projects in the game world which is the logic of playing games by earning tokens and to show people what other things can be done.
                 </p>
+            </div>
                 <div class="img-metaverse-content">
-                <img class="img-metaverse" src="../static/images/bunker_dark.png" alt="">
+                
+                    <img class="img-metaverse" src="../static/images/vr.png" alt="">
+                
                 </div>
             </div>
             <div id="mindmap-content-2" class="overlay" style="width: 0%;">
                 
                 <a style="color: #f2017b;" href="javascript:void(0)" class="closebtn" onclick="closeContentTwo()">&times;</a>
-                
-                <p class="text-ars">
+            <div class="text-ars">
+                <p>
+                    <h2>BASLIK</h2>
                     Our main purpose in this project is to produce NFTs with Acquired Rarity System (ARS). What we aim here is to remove the current rarity system of NFTs, add new items and rarities to everyone's own NFT, and improve the initial NFTs that can be boring after a time with new and nice-looking ones. That's why we named the Acquired Rarity System the second phase. We wanted to give the right to participate in this phase to people who have a Suzuran Ticket. ARS will work with the help of tasks, and if we need to give examples of these tasks, we would like to explain them as two main assignments. First, earning Steam achievements is important for a gamer, taking this as a rule, a few certain achievements will be added and when these achievements are earned, they will trigger the ARS. Secondly, you will be entitled to participate in the festivals we are hosting and you can receive the ARS’ hidden in some of the special Suzuran events at the festivals. The main purpose of giving these two particular examples is to show that instead of sticking to a single task type, ARS distributes multiple tasks, allowing everyone to concentrate on their own taste while it also helps all participants to work under equal conditions.
                 </p>
-               
+            </div>
                 <div class="img-ars-content">
-                    <img class="img-ars" src="../static/images/bunker_dark.png" alt="">
+                    <img class="img-ars" src="../static/images/upgrade.png" alt="">
                 </div>
             </div>
             <div id="mindmap-content-3" class="overlay" style="width: 0%;">
                 <a style="color: #f2017b;" href="javascript:void(0)" class="closebtn" onclick="closeContentThree()">&times;</a>
-                <p class="text-physical-world">
+            <div class="text-physical-world">            
+                <p>
+                    <h2>BASLIK</h2>
                     Music is one of the values we believe in. In our opinion, music, in other words, sound, is a form of expression that has existed since the first day of humanity. We strongly support this fact and we want to improve the music in everything we do as well as wanting to offer you beautiful sounds that you will listen to with passion. In particular, our biggest goal in this regard is to organize a live opera that will be broadcast all over the world at the same time.
                     <br><br>
+                    <h2>BASLIK <img style="width: 6%;" src="../static/images/double-tick.svg" alt=""> </h2>
                     Since we do not like the current fashion very much, we think we can evolve it into a more aesthetic way. With a more chaotic, asymmetrical, and unique fashion approach, we hope to form collaborations with big brands and create a style that is open for innovations in this direction. We want to do the first Europe NFT fashion show with this new style. We want the eyes of the whole world to be on our designs at that moment.
                     <br><br>
+                    <h2>BASLIK</h2>
                     One of the things we want to do is festivals that will be held in the name of Suzuran. We want to surprise all humanity with our innovative and futuristic plans in this regard. Wouldn't you want to be a part of the first NFT festival and spend all your time enjoying this innovative festival?
 
                 </p>
+            </div>
 
                 <div class="img-physical-world-content">
-                    <img class="img-physical-world" src="../static/images/bunker_dark.png" alt="">
+                    <img class="img-physical-world" src="../static/images/concer.png" alt="">
                 </div>
             </div>
             <h1 style="text-align: center; color:#f2017b; font-family: atmospheric; padding-top: 2%; font-size: 2.8rem;">TARGETMAP</h1>
@@ -245,46 +285,123 @@
         </div>
 
 
-
-        <div class="container-5">
+        <!-- 5 yerine 8 -->
+        <div class="container-8">
             <main>
                 <h1 class="faq-heading">Frequently Asked Questions</h1>
                 <section class="faq-container">
-                    <div class="faq-one">
+
+                    <div class="faq">
                         <!-- faq question -->
-                        <h4 class="faq-page" style="color: #fff;">What is an FAQ Page?</h4>
+                        <h4 class="faq-page" style="color: #fff;">How will Acquired Rarity System (ARS) NFTs work?</h4>
                         <!-- faq answer -->
                         <div class="faq-body">
-                            <p style="color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                                necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                                aperiam.
-                                Perspiciatis, porro!</p>
+                            <p style="color: #fff;">It will be in the form of recruiting and achieving the Acquired Rarity System, we are considering expanding the assignment system to a wide range. You can go to suzuran youtube channel to learn more about Acquired Rarity System (ARS).</p>
                         </div>
                     </div>
                     <hr class="hr-line">
-                    <div class="faq-two">
+
+                    <div class="faq">
                         <!-- faq question -->
-                        <h4 class="faq-page" style="color: #fff;">Why do you need an FAQ page?</h4>
+                        <h4 class="faq-page" style="color: #fff;">When will the Cypher solution be known?</h4>
                         <!-- faq answer -->
                         <div class="faq-body">
-                            <p style="color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                                necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                                aperiam.
-                                Perspiciatis, porro!</p>
+                            <p style="color: #fff;">Cyper's solution will continue until August 17, with 15 symbols revealed.</p>
                         </div>
                     </div>
                     <hr class="hr-line">
-                    <div class="faq-three">
+
+                    <div class="faq">
                         <!-- faq question -->
-                        <h4 class="faq-page" style="color: #fff;">Does it improves the user experience of a website?</h4>
+                        <h4 class="faq-page" style="color: #fff;">What are the Cypher details?</h4>
                         <!-- faq answer -->
                         <div class="faq-body">
-                            <p style="color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                                necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                                aperiam.
-                                Perspiciatis, porro!</p>
+                            <p style="color: #fff;">This is the beginning of the Cypher Suzuran story, we wanted our story to be heard and supported by everyone as our main goal is to spread suzuran around the world. And every 3 days, 1 Symbol will be deciphered, and then 10000 thousand dollars will be added to the current prize. What we want to do here is to wait and see if even those who crack the code will put us in more trouble or play it safe.</p>
                         </div>
                     </div>
+                    <hr class="hr-line">
+
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">Do we need to have Suzuran to get the Cypher reward?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">You must have the suzuran even if you have solved the bounty.</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">Is there a Discord?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">Yes, the Suzuran discord is available, but the chat channels will be exclusive to Suzuran ticket holders after sales. Being inside will allow you to be a first-hand reporter of community growth, timing of events, and progress in the project.!</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">Is there a guaranteed mint allowlist?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">No, we will not have whitelist sales, only to those who have an advertising agreement, on July 25, 1pm-4pm Pacific time.
+                            <br><br>
+                            The reason for not selling the Whitelist is to introduce the Acquired Rarity System (ARS) to people and the entire NFT market.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">What are the maximum mints per wallet?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">For each mint, 2 mints per wallet are awarded.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">What intellectual property rights do Suzuran holders receive?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">They own all trading rights to the Suzuran name.</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">What are the funds being used for?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">All funds will be used as a budget directly for the employees of Suzuran company and the Festival, Fashion Show, Metaverse and ARS system in our TargetMap.</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">When will recruiting members to work for Suzuran begin?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">It will start on the 5th of August, right after the festival announcement, from the work us button at the address " ".</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+
+                    <div class="faq">
+                        <!-- faq question -->
+                        <h4 class="faq-page" style="color: #fff;">Where in the world should we live for Suzuran?</h4>
+                        <!-- faq answer -->
+                        <div class="faq-body">
+                            <p style="color: #fff;">It doesn't matter where you are in the world, what matters is how you can contribute.</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+
+                    
                 </section>
             </main>
         </div>
