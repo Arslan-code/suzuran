@@ -62,11 +62,7 @@ function closeContentOne() {
     music.pause();
     playSvg.classList.remove('d-none');
     pauseSvg.style.visibility = "hidden";
-    
   }
-
-
-
 
   // countdown
 

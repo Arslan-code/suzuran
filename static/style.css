@@ -19,6 +19,11 @@
   src: url(../static/fonts/countdown.ttf);
 }
 
+@font-face {
+  font-family: 'trans-robotic';
+  src: url(../static/fonts/transRobotic.ttf);
+}
+
 .bg-music{
   position: fixed;
   margin: 0;
@@ -30,7 +35,7 @@
 
 .bg-music .music-box{
   width: 10%;
-  border: solid 1px white;
+  border: solid 1px #fff;
   border-radius: 5px;
   background-color: #fff;
   display: flex;
@@ -150,12 +155,6 @@
 }
 
 
-
-
-
-
-
-
 .container-4{
     position: relative;
     background: #21001d;
@@ -187,8 +186,6 @@
     color: #fff;
     font-size: 1.1rem;
 }
-
-
 
 
 .container-5{
@@ -275,10 +272,6 @@
     color: white;
     transform: rotateY(180deg);
   }
-
-
-
-
    
   .container-6{
     position: relative;
@@ -541,7 +534,7 @@
 .container-7 #mindmap-content-1{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   
 }
 
@@ -550,15 +543,30 @@
   padding: 2%;
 }
 
-.container-7 #mindmap-content-1 .img-metaverse-content{
+.container-7 #mindmap-content-1 .text-metaverse h2{
+  color: #f2017b;
+}
+
+
+.container-7 #mindmap-content-1 .element-2{
   width: 50%;
   height: auto;
 }
+.container-7 #mindmap-content-1 .img-metaverse-content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+
+}
 
 .container-7 #mindmap-content-1 .img-metaverse-content .img-metaverse{
-  width: 200px;
-  height: auto;
-  
+  width: 40%;
+  height: 60%;
+  padding: 20px;
 }
 
 
@@ -575,17 +583,30 @@
   padding: 2%;
 }
 
-.container-7 #mindmap-content-2 .img-ars-content{
+.container-7 #mindmap-content-2 .text-ars h2{
+  color:#f2017b ;
+}
+
+.container-7 #mindmap-content-2 .element-2{
   width: 50%;
+  height: auto;
+}
+
+.container-7 #mindmap-content-2 .img-ars-content{
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+
 }
 
-.container-7 #mindmap-content-2  .img-ars{
-  width: 80%;
-  height: auto;
+.container-7 #mindmap-content-2 .img-ars-content .img-ars{
+  width: 40%;
+  height: 60%;
+  padding: 20px;
 }
 
 
@@ -601,18 +622,31 @@
   padding: 2%;
 }
 
-.container-7 #mindmap-content-3 .img-physical-world-content{
+.container-7 #mindmap-content-3 .text-physical-world h2{
+  color: #f2017b;
+}
+
+.container-7 #mindmap-content-3 .element-2{
   width: 50%;
+  height: auto;
+}
+
+.container-7 #mindmap-content-3 .img-physical-world-content{
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .container-7 #mindmap-content-3  .img-physical-world{
-  width: 80%;
-  height: auto;
+  width: 40%;
+  height: 60%;
+  padding: 20px;
 }
+
 
 
 
@@ -677,8 +711,6 @@ margin: auto;
 }
 .faq-page:after {
   content: '\002B';
-  /* 29e8 şifre */
-  /* Unicode character for "plus" sign (+) */
   font-size: 35px;
   color: #21001d;
   float: right;
@@ -690,38 +722,5 @@ margin: auto;
   font-size: 35px;
   color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 
